@@ -45,6 +45,7 @@ body{
 
 .phoneDetails,.not-found{
     text-align: center;
+    width: 100%;
 }
 
 li{
