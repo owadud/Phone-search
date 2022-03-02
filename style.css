@@ -43,3 +43,6 @@ body{
     grid-auto-rows: minmax(100px, auto);
 }
 
+.phoneDetails,.not-found{
+    text-align: center;
+}
