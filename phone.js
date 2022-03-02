@@ -1,5 +1,6 @@
 
 const notFound = document.getElementById("notFound");
+const phone = document.getElementById('phone');
 
 document.getElementById('search').addEventListener('click', function () {
 
@@ -21,6 +22,8 @@ const displayPhone = phones => {
     //reset 
     parentDiv.innerHTML = '';
     notFound.innerHTML = "";
+    phone.innerHTML = '';
+   
 
     document.getElementById('searchText').value = '';
 
@@ -68,7 +71,7 @@ const showDetails = (id) => {
 
 const displayDetails = detail => {
 
-    const phone = document.getElementById('phone');
+   
 
     const phoneDetails = `<div class="phoneDetails">
     <h2><span class="feature">Phone:</span> ${detail.name} </h2>
@@ -99,5 +102,6 @@ const displayDetails = detail => {
 
 //Not found text
 const showNotFound = () => {
+    
     notFound.innerHTML = `<h1 class="not-found">This phone is not found. Please Try again with any other Name</h1>`;
 }
